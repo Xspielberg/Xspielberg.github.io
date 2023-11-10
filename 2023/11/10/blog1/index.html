@@ -6,15 +6,15 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>blog 0 : the beginning | 516o&#39;s page</title>
+  <title>blog 1 : the second step | 516o&#39;s page</title>
   <meta name="author" content="5i6o">
   
-  <meta name="description" content="臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」">
+  <meta name="description" content="爬虫4hg2023组委会模拟器based on selenium1234567891011121314151617181920212223242526272829303132333435363738from selenium import webdriverfrom selenium.webdriv">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="blog 0 : the beginning"/>
+  <meta property="og:title" content="blog 1 : the second step"/>
   <meta property="og:site_name" content="516o&#39;s page"/>
 
   
@@ -107,7 +107,7 @@
 
 	
 		<div class="page-header">
-			<h1> blog 0 : the beginning</h1>
+			<h1> blog 1 : the second step</h1>
 		</div>
 	
 
@@ -124,7 +124,7 @@
 	<div class="mypage">		
 	  		
 
-	  <h4 id="臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」"><a href="#臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」" class="headerlink" title="臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」"></a>臣闻善作者，不必善成；善始者，不必善终。「史记·乐毅列传」</h4>	  
+	  <h3 id="爬虫4hg2023组委会模拟器"><a href="#爬虫4hg2023组委会模拟器" class="headerlink" title="爬虫4hg2023组委会模拟器"></a>爬虫4hg2023组委会模拟器</h3><h4 id="based-on-selenium"><a href="#based-on-selenium" class="headerlink" title="based on selenium"></a>based on selenium</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">from selenium import webdriver</span><br><span class="line">from selenium.webdriver.common.by import By</span><br><span class="line">from selenium.webdriver.support.ui import WebDriverWait</span><br><span class="line">from selenium.webdriver.support import expected_conditions as EC</span><br><span class="line">import time</span><br><span class="line"># 创建一个浏览器对象，防止其自动关闭</span><br><span class="line"># 创建Chrome浏览器对象</span><br><span class="line">options = webdriver.ChromeOptions()</span><br><span class="line">options.add_argument(&#x27;--timeout=30&#x27;)  # 设置页面加载超时时间</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(options=options)</span><br><span class="line"></span><br><span class="line"># 打开指定的URL</span><br><span class="line">driver.get(&quot;http://202.38.93.111:10021&quot;)</span><br><span class="line"># 找到名为&quot;password&quot;的输入框并输入密码</span><br><span class="line">password_input = driver.find_element(By.XPATH,&quot;//input[@type=&#x27;text&#x27; and @name=&#x27;token&#x27;]&quot;)</span><br><span class="line">password_input.send_keys(&quot;1133:MEUCIEczdyRKFX2C6YuGosIBv0ToULSY4b0ngT/EuV+NTICrAiEA8dQRmONCkIKB7rZu7SdR7XZUGdC1FGAGSUntZzWshMM=&quot;)</span><br><span class="line">submit_button = driver.find_element(By.XPATH,&quot;//input[@type=&#x27;submit&#x27; and @value=&#x27;开始做题&#x27;]&quot;)</span><br><span class="line">submit_button.click()</span><br><span class="line">count=0</span><br><span class="line">checked_elements = []</span><br><span class="line">while count&lt;=1000:</span><br><span class="line">  find_elements = WebDriverWait(driver, 5).until(</span><br><span class="line">        EC.presence_of_all_elements_located((By.CLASS_NAME, &quot;fakeqq-message__bubble&quot;))</span><br><span class="line">    )</span><br><span class="line">  for element in find_elements:</span><br><span class="line">    if element in checked_elements:</span><br><span class="line">      continue</span><br><span class="line">    checked_elements.append(element)</span><br><span class="line">    if &#x27;hack[&#x27; in element.get_attribute(&#x27;innerHTML&#x27;):</span><br><span class="line">      # 是，则点击该元素</span><br><span class="line">      element.click()</span><br><span class="line">      print(&#x27;bruh&#x27;)</span><br><span class="line">    else:</span><br><span class="line">      print(&#x27;wluwluwlu&#x27;)</span><br><span class="line">    count+=1</span><br><span class="line"></span><br><span class="line">time.sleep(10)</span><br></pre></td></tr></table></figure>	  
 	</div>
 
 	<div>
@@ -133,13 +133,12 @@
 
     
     
-    <a href="/2023/11/10/blog1/" type="button" class="btn btn-default"><i
-                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
 
     <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-    <a href="/2023/10/21/hello-world/" type="button" class="btn btn-default ">Next<i
+    <a href="/2023/10/21/blog-test/" type="button" class="btn btn-default ">Next<i
                 class="fa fa-arrow-circle-o-right"></i></a>
     
 
@@ -168,7 +167,7 @@
 	
 	<div class="meta-widget">
 	<i class="fa fa-clock-o"></i>
-	2023-10-21 
+	2023-11-10 
 	</div>
 	
 
